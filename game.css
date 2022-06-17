@@ -1,0 +1,113 @@
+h2 {
+  font-size: 15rem;
+  text-align: center;
+  height: 70vh;
+  line-height: 50vh;
+  color: #fcedd8;
+  font-family: "Niconne", cursive;
+  font-weight: 700;
+  text-shadow: 5px 5px 0px #eb452b, 10px 10px 0px #efa032, 15px 15px 0px #46b59b,
+    20px 20px 0px #017e7f, 25px 25px 0px #052939, 30px 30px 0px #c11a2b,
+    35px 35px 0px #c11a2b, 40px 40px 0px #c11a2b, 45px 45px 0px #c11a2b;
+}
+
+h3 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightblue;
+  border: 4mm ridge rgb(53, 173, 255);
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  background-color: blue;
+}
+
+.mini-grid {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightblue;
+  border: 4mm ridge rgb(53, 173, 255);
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 0.25em 0.75em;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.down {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  margin: auto;
+  border-bottom: 0.05em solid #b4e7f8;
+  box-shadow: inset 0 -0.05em 0 #b4e7f8;
+  color: inherit;
+  transition: background-color 0.25s cubic-bezier(0.33, 0.66, 0.66, 1);
+  text-decoration: none;
+}
+
+#down {
+  margin-top: 100%;
+  padding-bottom: 25%;
+}
+
+.down:hover,
+.down:focus,
+.down:active {
+  background-color: #b4e7f8;
+}
+
+p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif; font-size: 16px; font-weight: 300; line-height: 1.5625; margin-bottom: 15px; }
+
